@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pickard Printing Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pickard Printing" />
+    <meta name="keywords" content="printing, 3d printing, hobbies, small business, custom printing, custom prints" />
+    <link rel="stylesheet" href="css/index.css" media="all" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="center">
+    <header>
+        <h1>Pickard Printing - Custom 3D Prints</h1>
+    </header>
+    <section class="row">
+        <nav class="col-3 col-m-3">
+            <h2>Main Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">What Is 3D Printing?</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img src="media/ender3pro.jpg" style="width:100%;" alt="Creality Ender 3 Pro">
+        </nav>
+
+<article class="col-6 col-m-6">
+    <form name="contactform" id="contactform" action="mailto:pstephen1@live.com" enctype="text/plain"   method="post"> 
+        <fieldset>
+            <legend>Contact Us</legend>
+            <div>      
+
+                <p><label>Name</label>
+                    <input class="formEntry" id="name" name="name" type="text" placeholder="First and last name" required autofocus> </p>
+                <p><label>Email</label></p>
+                    <input class="formEntry" id="email" name="email" type="email" placeholder="example@domain.com" required> </p>
+                <p><label>Telephone</label></p>
+                    <input class="formEntry" id="telephone" name="telephone" type="tel" placeholder="(231) 123-4567"> </p>
+                    <p><label>Inquiry Type</label>
+
+                    <select class="formEntry" id="contacttype" name="contacttype">
+                        <option value="PrintQuote">Printing Quote</option>
+                        <option value="Modeling">3D Modeling Info</option>
+                        <option value="Question">General inquiries</option>
+                        <option value="Other">Other</option>
+                    </select></p>
+
+                <p><label>Inquiry Details</label>
+                    <textarea class="formEntry" id="info" name="info" type="text" style="width:auto; height: 200px"></textarea></p>
+            </div>
+
+            <div class="center" style="justify-self:center; width:40%; justify-content: center;">
+                <p style="text-align:center; margin-right: 2%;"></p>
+                <button class="inputButton" type=submit style="width: 200px" onclick='showMessage()'>Submit</button>
+
+            </div>
+        </fieldset>
+    </form>
+
+</article>  
+
+        <aside class="col-3 col-m-3">
+            <h2>What Can I Order?</h2>
+            <h5>Art & Sculptures</h5>
+            <img src="media/3dprintedball.jpg" style="max-width: 100%;" alt="3D Printed Sphere">
+            <h5>Games & puzzles</h5>
+            <img src="media/3dprintedchess.jpg" style="max-width:100%;" alt="3D Printed Chess Board">
+            <h5>Tools</h5>
+            <img src="media/3d-printed-tool.jpg" style="max-width:100%;" alt="3D Printed Tools">
+        </aside>
+
+    </section>
+
+    <script type="text/javascript">
+    function showMessage()
+    {
+        alert("Thank you! We will follow up with you as soon as we can!");
+    }
+        </script>
+
+    <footer>
+        <p>&copy; Stephen Pickard, 2021</p>
+        <p>pickars@mail.nmc.edu</p>
+    </footer>
+    <div class="icon-bar">
+        <p>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a></p>
+        </div>
+</body>
+
+</html>
